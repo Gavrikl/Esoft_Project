@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WTFTutorialModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AgentsSet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DealShare" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ClientsSet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RealEstateSet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Address_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address_Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address_House" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address_Number" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Coordinate_latitude" Type="Double" />
+    <Property Name="Coordinate_longitude" Type="Double" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="TotalArea" Type="Double" />
+    <Property Name="TotalFloors" Type="Int32" />
+    <Property Name="Rooms" Type="Int32" />
+    <Property Name="Floor" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="WTFTutorialEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AgentsSet" EntityType="Self.AgentsSet" />
+    <EntitySet Name="ClientsSet" EntityType="Self.ClientsSet" />
+    <EntitySet Name="RealEstateSet" EntityType="Self.RealEstateSet" />
+  </EntityContainer>
+</Schema>

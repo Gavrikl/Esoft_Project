@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище WTFTutorialModelContainer" CdmEntityContainer="WTFTutorialEntities5">
+    <EntitySetMapping Name="AgentsSet">
+      <EntityTypeMapping TypeName="WTFTutorialModel.AgentsSet">
+        <MappingFragment StoreEntitySet="AgentsSet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DealShare" ColumnName="DealShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientsSet">
+      <EntityTypeMapping TypeName="WTFTutorialModel.ClientsSet">
+        <MappingFragment StoreEntitySet="ClientsSet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RealEstateSet">
+      <EntityTypeMapping TypeName="WTFTutorialModel.RealEstateSet">
+        <MappingFragment StoreEntitySet="RealEstateSet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="Address_Street" ColumnName="Address_Street" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+          <ScalarProperty Name="TotalFloors" ColumnName="TotalFloors" />
+          <ScalarProperty Name="Rooms" ColumnName="Rooms" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
