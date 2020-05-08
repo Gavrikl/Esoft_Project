@@ -4,10 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5967a9b949e84dd8b71bd48a09fea54d" Name="Diagram1">
-        <EntityTypeShape EntityType="WTFTutorialModel.AgentsSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WTFTutorialModel.ClientsSet" Width="1.5" PointX="2.625" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="WTFTutorialModel.RealEstateSet" Width="1.5" PointX="5.375" PointY="3.625" IsExpanded="true" />
+      <Diagram DiagramId="981fb33f974a47f8a85930d019eadae9" Name="Diagram1">
+        <EntityTypeShape EntityType="WTFTutorialModel.AgentsSet" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WTFTutorialModel.ClientsSet" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WTFTutorialModel.DemandSet" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WTFTutorialModel.RealEstateSet" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WTFTutorialModel.SupplySet" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WTFTutorialModel.Users" Width="1.5" PointX="5.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WTFTutorialModel.DealSet" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="WTFTutorialModel.FK_DemandSet_DemandSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WTFTutorialModel.FK_SupplySet_AgentsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WTFTutorialModel.FK_DemandSet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WTFTutorialModel.FK_SupplySet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WTFTutorialModel.FK_DealSet_DemandSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WTFTutorialModel.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WTFTutorialModel.FK_DealSet_SupplySet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

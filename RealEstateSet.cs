@@ -14,6 +14,11 @@ namespace Esoft_Project
     
     public partial class RealEstateSet
     {
+        public RealEstateSet()
+        {
+            this.SupplySet = new HashSet<SupplySet>();
+        }
+    
         public int id { get; set; }
         public string Address_City { get; set; }
         public string Address_Street { get; set; }
@@ -26,5 +31,7 @@ namespace Esoft_Project
         public Nullable<int> TotalFloors { get; set; }
         public Nullable<int> Rooms { get; set; }
         public Nullable<int> Floor { get; set; }
+    
+        public virtual ICollection<SupplySet> SupplySet { get; set; }
     }
 }

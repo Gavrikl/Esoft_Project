@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище WTFTutorialModelContainer" CdmEntityContainer="WTFTutorialEntities5">
+  <EntityContainerMapping StorageEntityContainer="Хранилище WTFTutorialModelContainer" CdmEntityContainer="WTFTutorialEntities12">
     <EntitySetMapping Name="AgentsSet">
       <EntityTypeMapping TypeName="WTFTutorialModel.AgentsSet">
         <MappingFragment StoreEntitySet="AgentsSet">
@@ -24,6 +24,26 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="DemandSet">
+      <EntityTypeMapping TypeName="WTFTutorialModel.DemandSet">
+        <MappingFragment StoreEntitySet="DemandSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdAgent" ColumnName="IdAgent" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="MinArea" ColumnName="MinArea" />
+          <ScalarProperty Name="MaxArea" ColumnName="MaxArea" />
+          <ScalarProperty Name="MinRooms" ColumnName="MinRooms" />
+          <ScalarProperty Name="MaxRooms" ColumnName="MaxRooms" />
+          <ScalarProperty Name="MinFloor" ColumnName="MinFloor" />
+          <ScalarProperty Name="MaxFloor" ColumnName="MaxFloor" />
+          <ScalarProperty Name="MinFloors" ColumnName="MinFloors" />
+          <ScalarProperty Name="MaxFloors" ColumnName="MaxFloors" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="RealEstateSet">
       <EntityTypeMapping TypeName="WTFTutorialModel.RealEstateSet">
         <MappingFragment StoreEntitySet="RealEstateSet">
@@ -39,6 +59,36 @@
           <ScalarProperty Name="TotalFloors" ColumnName="TotalFloors" />
           <ScalarProperty Name="Rooms" ColumnName="Rooms" />
           <ScalarProperty Name="Floor" ColumnName="Floor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplySet">
+      <EntityTypeMapping TypeName="WTFTutorialModel.SupplySet">
+        <MappingFragment StoreEntitySet="SupplySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdAgent" ColumnName="IdAgent" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="IdRealEstate" ColumnName="IdRealEstate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="WTFTutorialModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealSet">
+      <EntityTypeMapping TypeName="WTFTutorialModel.DealSet">
+        <MappingFragment StoreEntitySet="DealSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdSupply" ColumnName="IdSupply" />
+          <ScalarProperty Name="IdDemand" ColumnName="IdDemand" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

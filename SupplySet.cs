@@ -12,22 +12,22 @@ namespace Esoft_Project
     using System;
     using System.Collections.Generic;
     
-    public partial class ClientsSet
+    public partial class SupplySet
     {
-        public ClientsSet()
+        public SupplySet()
         {
-            this.DemandSet = new HashSet<DemandSet>();
-            this.SupplySet = new HashSet<SupplySet>();
+            this.DealSet = new HashSet<DealSet>();
         }
     
-        public int id { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
+        public int Id { get; set; }
+        public int IdAgent { get; set; }
+        public int IdClient { get; set; }
+        public int IdRealEstate { get; set; }
+        public long Price { get; set; }
     
-        public virtual ICollection<DemandSet> DemandSet { get; set; }
-        public virtual ICollection<SupplySet> SupplySet { get; set; }
+        public virtual AgentsSet AgentsSet { get; set; }
+        public virtual ClientsSet ClientsSet { get; set; }
+        public virtual RealEstateSet RealEstateSet { get; set; }
+        public virtual ICollection<DealSet> DealSet { get; set; }
     }
 }
